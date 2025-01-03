@@ -3,7 +3,7 @@
 Flask 框架簡單建立網頁 並使用自動化測試
 
 ## 查看視頻
-本專案 使用chorme selenium 自動測試 網頁登入 影片：
+本專案 使用chorme selenium 自動測試 網頁登入 請點擊此圖片播放影片：
 
 [![點擊播放](selenuim.png)](https://www.youtube.com/watch?v=dO125m_-sKs)
 
