@@ -6,6 +6,11 @@ Flask 框架簡單建立網頁 並使用自動化測試
 本專案 使用chorme selenium 自動測試 網頁登入 影片：
 
 [點擊此處下載視頻 autoTest.mp4 ](autoTest.mp4)
+## 查看視頻
+<video width="640" height="360" controls>
+    <source src="autoTest.mp4" type="video/mp4">
+    您的瀏覽器不支持視頻播放。
+</video>
 
 ## 專案介紹
 本專案是一個使用 Flask 框架建立的簡單登入功能網頁，包含以下主要功能：
