@@ -1,10 +1,11 @@
-# flask_login-autoTest_project
-Flask 框架簡單建立網頁 並使用自動化測試
-# Flask Login Project
 
-本專案 使用chorme selenium 自動測試 網頁登入 影片：
+# Flask Login Project
+Flask 框架簡單建立網頁 並使用自動化測試
+
 ## 查看視頻
-[點擊此處下載視頻](autoTest.mp4)
+本專案 使用chorme selenium 自動測試 網頁登入 影片：
+
+[點擊此處下載視頻 autoTest.mp4 ](autoTest.mp4)
 
 ## 專案介紹
 本專案是一個使用 Flask 框架建立的簡單登入功能網頁，包含以下主要功能：
