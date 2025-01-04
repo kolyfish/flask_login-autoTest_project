@@ -66,11 +66,11 @@ flask_login_project/
 確保您已安裝 Python 和 `pip`，然後執行以下命令安裝 Flask：
 ``` pip install flask```
 ### 2.啟動伺服器
-在專案目錄中執行以下命令啟動Flask伺服器
-python app.py
+用終端機在專案目錄中執行以下命令啟動Flask伺服器
+```python app.py```
 ### 3.瀏覽網頁
 在瀏覽器中打開以下網址訪問專案：
-```http://127.0.0.1:5000```
+```http://127.0.0.1:5000/login```
 
 ## 專案功能展示
 ## 登入頁面：
@@ -82,12 +82,35 @@ python app.py
 ![圖片描述](歡迎畫面.png)
 
 登入成功後顯示歡迎訊息。
-### Selenium IDE導出測試腳本
+### Selenium IDE 測試
+#### 步驟 1：啟動 Selenium IDE
+點擊瀏覽器工具列中的 Selenium IDE 圖示。
+選擇 Create a New Project。
+命名專案，例如 Flask Login Test。
+#### 步驟 2：開始錄製測試
+點擊 Record a New Test in Project。
+輸入伺服器的 URL，例如：
+arduino
 
-### 未來改進方向
-新增使用者註冊功能
-整合資料庫（如 SQLite 或 MySQL）存儲使用者資料
-增加前端樣式，提升用戶體驗
+```http://127.0.0.1:5000/login```
+按 Start Recording，瀏覽器會自動打開登入頁面。
+#### 步驟 3：操作步驟
+在錄製模式下執行以下操作：
+
+在 電子郵件欄位 輸入：test@example.com。
+在 密碼欄位 輸入：123。
+點擊 登入按鈕。
+#### 結果驗證：
+
+確認跳轉到歡迎頁面，並包含文字 歡迎, testuser!。
+#### 步驟 4：停止錄製
+完成操作後，回到 Selenium IDE。
+點擊 Stop Recording。
+將錄製的測試保存，命名為 Login Test。
+#### 步驟 5：執行測試
+在 Selenium IDE 主介面中，選中剛剛錄製的測試。
+點擊 Run current test 按鈕。
+確認測試能正常運行，並顯示測試結果。
 
 貢獻者
 作者：kolyfish
