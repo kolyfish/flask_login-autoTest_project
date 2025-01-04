@@ -6,17 +6,23 @@ Flask 框架簡單建立網頁 並使用自動化測試
 本專案 使用chorme selenium 自動測試 網頁登入 請點擊此圖片播放影片：
 
 [![點擊播放](selenuim.png)](https://www.youtube.com/watch?v=dO125m_-sKs)
+- 影片中  執行測試 點擊 ```Run current test```
 
 ## 專案介紹
 本專案是一個使用 Flask 框架建立的簡單登入功能網頁，包含以下主要功能：
 - 使用者登入頁面
 - 成功登入後的歡迎頁面
 
-此專案適合作為 Flask 入門學習範例，並可擴展為更複雜的應用。
 
 ---
 
 ## 專案結構
+flask_login_project/
+├── templates/
+│   ├── login.html        # 登入頁面 HTML 模板
+│   ├── welcome.html      # 成功登入後的歡迎頁面 HTML 模板
+├── app.py                # 主程式，處理 Flask 後端邏輯
+├── .DS_Store             # macOS 系統自動生成的文件（可忽略）
 
 
 
@@ -58,7 +64,7 @@ Flask 框架簡單建立網頁 並使用自動化測試
 
 ### 1. 安裝依賴
 確保您已安裝 Python 和 `pip`，然後執行以下命令安裝 Flask：
-```bash pip install flask```
+``` pip install flask```
 ### 2.啟動伺服器
 在專案目錄中執行以下命令啟動Flask伺服器
 python app.py
