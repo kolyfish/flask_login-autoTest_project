@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>歡迎</title>
+    <title>歡迎頁面</title>
 </head>
 <body>
     <h1>歡迎, {{ username }}!</h1>
+    <p>您已成功登入 {{ user_data.login_attempts.success }} 次。</p>
+    <p>最近一次登入時間：{{ user_data.last_login }}</p>
+    <p>失敗登入次數：{{ user_data.login_attempts.failure }}</p>
+    <p>失敗登入時間記錄：</p>
+    <ul>
+        {% for timestamp in user_data.failure_timestamps %}
+            <li>{{ timestamp }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/logout">登出</a></p>
 </body>
 </html>

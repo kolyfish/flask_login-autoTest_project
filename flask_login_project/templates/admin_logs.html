@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理者日誌</title>
+</head>
+<body>
+    <h1>登入活動日誌</h1>
+    <ul>
+        {% for log in logs %}
+            <li>{{ log }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/logout">登出</a></p>
+</body>
+</html>
